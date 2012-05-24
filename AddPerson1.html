@@ -1,0 +1,69 @@
+<--- --------------------------------------------------------------------------------------- ----
+	
+	Blog Entry:
+	Preventing Links In Standalone iPhone Applications From Opening In Mobile Safari
+	
+	Code Snippet:
+	1
+	
+	Author:
+	Ben Nadel / Kinky Solutions
+	
+	Link:
+	http://www.bennadel.com/index.cfm?event=blog.view&id=2302
+	
+	Date Posted:
+	Dec 27, 2011 at 10:06 AM
+	
+---- --------------------------------------------------------------------------------------- --->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+ 
+	<!-- Stand-alone settings for iOS. -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ 
+	<!-- Load scripts. -->
+	<script type="text/javascript" src="./jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./links.js"></script>
+</head>
+<body>    
+    <div data-role="page" id="page7">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Find A Friend?
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput3">
+                            Name:
+                        </label>
+                        <input id="textinput3" placeholder="" value="" type="text">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            Email address:
+                        </label>
+                        <input id="textinput4" placeholder="" value="" type="text">
+                    </fieldset>
+                </div>
+                <a data-role="button" data-transition="slideup" data-theme="a" href="#page16">
+                    Add this person to my tethrball
+                </a>
+                <a data-role="button" data-transition="slidedown" href="RecentlyAdded.html">
+                    Never mind.
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

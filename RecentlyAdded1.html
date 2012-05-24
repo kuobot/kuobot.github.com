@@ -1,0 +1,102 @@
+<--- --------------------------------------------------------------------------------------- ----
+	
+	Blog Entry:
+	Preventing Links In Standalone iPhone Applications From Opening In Mobile Safari
+	
+	Code Snippet:
+	2
+	
+	Author:
+	Ben Nadel / Kinky Solutions
+	
+	Link:
+	http://www.bennadel.com/index.cfm?event=blog.view&id=2302
+	
+	Date Posted:
+	Dec 27, 2011 at 10:06 AM
+	
+---- --------------------------------------------------------------------------------------- --->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index 2</title>
+ 
+	<!-- Stand-alone settings for iOS. -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ 
+	<!-- Load scripts. -->
+	<script type="text/javascript" src="./jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./links.js"></script>
+</head>
+<body>    
+     <div data-role="page" data-theme="b" id="page16">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Recently Added
+                </h3>
+                <a data-role="button" data-transition="slideup" href="#page7">
+                    +
+                </a>
+                <a data-role="button" data-transition="slide" href="#page22" data-icon="arrow-r"
+                data-iconpos="left">
+                    All
+                </a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="d" data-inset="false">
+                    <li data-role="list-divider" role="heading">
+                        Awaiting tether confirmation
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page19" data-transition="none">
+                            Mimi Chau Nguyen
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page21" data-transition="none">
+                            Sarah Putman
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Tethred
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page9" data-transition="none">
+                            Ben Ogle
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page19" data-transition="none">
+                            Angie Parris-Raney
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page19" data-transition="none">
+                            Stephanie Wong
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page19" data-transition="none">
+                            Ruochen Qiu
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page19" data-transition="none">
+                            Smitha Balakrishnan
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="#page19" data-transition="none">
+                            VM Brasseur
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+     </div>    
+</body>
+</html>
